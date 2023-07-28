@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Aakash Kolli's Personal Portfolio
 
 This is a personal website project created using HTML, JavaScript, and CSS. It serves as a showcase for my skills, projects, and experiences.
@@ -47,3 +48,6 @@ This project is licensed under the MIT License.
 
 
 
+=======
+# AwesomeAakash1.github.io
+>>>>>>> b305eac8514c15dbea768a0be8a0d4c2a15e2b03

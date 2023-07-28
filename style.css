@@ -256,6 +256,13 @@ nav ul li a:hover::after {
     overflow: hidden; /* content clipped to padding box */
 }
 
+<<<<<<< HEAD
+=======
+.eco-move {
+    padding-top: 15%;
+}
+
+>>>>>>> b305eac8514c15dbea768a0be8a0d4c2a15e2b03
 .work img {
     width: 100%;
     border-radius: 10px;
@@ -512,7 +519,11 @@ nav .fas {
     height: 100%;
     width: 90%;
     border-radius: 6px;
+<<<<<<< HEAD
     background: #4070f4;
+=======
+    background: #d3d4d7;
+>>>>>>> b305eac8514c15dbea768a0be8a0d4c2a15e2b03
     animation: progress 0.4s ease-in-out forwards;
     animation-delay: 0.3s;
     opacity: 0;
