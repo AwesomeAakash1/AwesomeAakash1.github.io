@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Aakash Kolli's Personal Portfolio
 
 This is a personal website project created using HTML, JavaScript, and CSS. It serves as a showcase for my skills, projects, and experiences.
