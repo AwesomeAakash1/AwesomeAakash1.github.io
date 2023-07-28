@@ -256,13 +256,10 @@ nav ul li a:hover::after {
     overflow: hidden; /* content clipped to padding box */
 }
 
-<<<<<<< HEAD
-=======
 .eco-move {
     padding-top: 15%;
 }
 
->>>>>>> b305eac8514c15dbea768a0be8a0d4c2a15e2b03
 .work img {
     width: 100%;
     border-radius: 10px;
@@ -384,12 +381,24 @@ form input, form textarea {
     width: 100%;
     border: 0;
     outline: none;
-    background: #262626;
+    background: #d3d4d7;
     padding: 15px;
     margin: 15px 0;
-    color: #d3d4d7;
+    color: #262626;
     font-size: 18px;
     border-radius: 6px;
+}
+
+
+input[name="name"] {
+    /* Your styles here */
+    /* For example: */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 form .btn2 {
@@ -519,11 +528,7 @@ nav .fas {
     height: 100%;
     width: 90%;
     border-radius: 6px;
-<<<<<<< HEAD
-    background: #4070f4;
-=======
     background: #d3d4d7;
->>>>>>> b305eac8514c15dbea768a0be8a0d4c2a15e2b03
     animation: progress 0.4s ease-in-out forwards;
     animation-delay: 0.3s;
     opacity: 0;
@@ -561,6 +566,22 @@ nav .fas {
     background: #4070f4;
     z-index: 1;
 }
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #143AA2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #0E2B87;
+}
+
 .tooltip::before{
     content: '';
     position: absolute;
