@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aakash Kolli's Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <!--FontAwesome Kit Script-->
+        <script src="https://kit.fontawesome.com/43eefeb9b0.js" crossorigin="anonymous"></script>
+        <style>
+            body {
+                background-color: #143AA2;
+            }
+            /* Add CSS for the particle effect */
+            #particles-js {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+
+            .form-container {
+                background-color: #eee;
+                padding: 20px;
+                margin: 0 auto;
+                width: 60%;
+            }
+
+            .form-container button {
+                padding: 10px 20px; /* Adjust the values as per your preference */
+                font-size: 18px; /* Adjust the font size as per your preference */
+            }
+
+            .form-container input[type="email"],
+            .form-container textarea {
+              background-color: #ddd;
+              border: 1px solid #000;
+              color: #000;
+}
+        </style>
+        
+    </head>
+    <body>
+        <div id="particles-js"></div>
+
+        <!-- About Section -->
+        <div id="header" class="gradient-background">
+            <div class="container">
+                <nav>
+                    <div class="website-logo">
+                        <h1><span>A</span>akash.</h1>
+                    </div>                    <ul id="sideMenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closeMenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openMenu()"></i>
+                </nav>
+                <div class="header-text" style="text-align: center;">
+                        <p>Full-Stack Developer</p>
+                        <h1>Hi, I'm <span>Aakash</span><br>Kolli from Illinois.</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div id="about">
+            <div class="container"> 
+                <div class="row">
+                    <div class="about-col-1">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p>I am an avid programmer, student, and reader. I am currently learning data science with Python and Android app development with Java.
+                            I am interested in app development, web development, and data structures. I am taking AP Calculus BC and AP Chemistry. 
+                            In my free time, I read academic articles and historical fiction. </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                        </div>
+                        <!--Skills
+                        By default, skills are shown.-->
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing User Interfaces</li>
+                                <li><span>App Development</span><br>Website Development with HTML + CSS</li>
+                                <li><span>Web Development</span><br>Android + iOS App Development</li>
+                            </ul>
+                        </div>
+                        <!--Experience (Internships, Hackathons, Volunteering, Clubs)-->
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>TAG Team, Key Club</span><br>Community Service</li>
+                                <li><span>Warriors Who Code, CS Club @ Alive Center</span><br>CS Leadership</li>
+                                <li><span>HackFTW</span><br>Hackathon- Zero Hunger (3rd Place)</li>
+                                <li><span>USACO</span><br>Competitive Programming- Online Contests</li>
+                            </ul>
+                        </div>
+                        <!--Education-->
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021-2025</span><br>Waubonsie Valley High School</li>
+                                <li><span>2018-2021</span><br>Still Middle School</li>
+                                <li><span>2012-2018</span><br>Owen Elementary School</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Services Section-->
+        <div id="services">
+            <div class="container">
+                <h1 class="subtitle">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>I design wesbites using HTML, CSS, and Javascript. </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        <h2>Data Analysis</h2>
+                        <p>I analyze data in Python using Google sheets, scikit-learn, numpy, and more.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Design</h2>
+                        <p>I develop Android apps using Java in Android Studios.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+        <div class="skill-box">
+            <span class="title">Python</span>
+            <div class="skill-bar">
+                <span class="skill-per html">
+                    <span class="tooltip">90%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">Java</span>
+            <div class="skill-bar">
+                <span class="skill-per css">
+                    <span class="tooltip">70%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">HTML+CSS</span>
+            <div class="skill-bar">
+                <span class="skill-per python">
+                    <span class="tooltip">50%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">Node.js</span>
+            <div class="skill-bar">
+                <span class="skill-per nodejs">
+                    <span class="tooltip">30%</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+<!--Portfolio Section-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/android.jpg" alt="Zero Hunger Android App">
+                <div class="layer">
+                    <h3>Zero Hunger Android App</h3>
+                    <p>The app spreads awareness about global hunger and promotes humanitarian organizations.
+                        Download it from my Github: AwesomeAakash1.</p>
+                    </p>
+                    <!--link when icon clicked-->
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a> 
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/dashboard.png" alt="NEO Dashboard">
+                <div class="layer">
+                    <h3>NEO Dashboard</h3>
+                    <p> The dashboard provides stats and data viz about Near Earth Objects.
+                        Download it from my Github: AwesomeAakash1.</p>
+                    </p>
+                    <!--link when icon clicked-->
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a> 
+                </div>
+            </div>
+            <div class="work">
+                <img class="eco-move" src="images/gnec_logo.png" alt="EcoMove">
+                <div class="layer">
+                    <h3>EcoMove</h3>
+                    <p>The app gamifies eco-friendly commuting practices.
+                        Download it from my Github: AwesomeAakash1.</p>
+                    <!--link when icon clicked-->
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a> 
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!--Portfolio Section-->
+<div id="resume">
+    <div class="container">
+        <!--resume WIP-->
+    </div>    
+</div>
+
+<div class="form-container">
+    <form action="https://formbold.com/s/oyWRA" method="POST" class="contact-form">
+        <label>
+            Your email:
+            <input type="email" name="email">
+        </label>
+        <label>
+            Your message:
+            <textarea name="message"></textarea>
+        </label>
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+<div class="copyright">
+    <p>Aakash Kolli, Self-taught Full-End Software Developer</p>
+</div>
+
+<!-- particle effect-->
+<script src="particles.js"></script>
+<script src="js/app.js"></script>
+
+</script>
+
+            
+        <!--open tab when clicked-->
+        <script>
+            var tabLinks = document.getElementsByClassName("tab-links");
+            var tabContents = document.getElementsByClassName("tab-contents");
+            
+            function openTab(tabName) {
+                // removes bar and content of current tab when any tab clicked
+                for (tabLink of tabLinks) {
+                    tabLink.classList.remove("active-link");
+                }
+
+                for (tabContent of tabContents) {
+                    tabContent.classList.remove("active-tab");
+                }
+                
+                // adds bar (active-link) to tab clicked
+                event.currentTarget.classList.add("active-link");
+                //adds content (active-tab) to tab clicked
+                document.getElementById(tabName).classList.add("active-tab");
+            }
+        </script>
+
+        <!-- open and close side menu-->
+        <script>
+            var sideMenu = document.getElementById("sideMenu");
+
+            function openMenu() {
+                sideMenu.style.right = "0";
+            }
+
+            function closeMenu() {
+                sideMenu.style.right = "-200px";
+            }
+
+        </script>
+        
+        <!--Google Sheets: Contact Form Data-->
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbybFtQ_rS-FCR7TF4PHD160nUKHqYiKkNWw3bfxt_6zN5RPWEwem8tF5NwgmKOd68HR2w/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg");
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully.";
+                    setTimeout(function(){
+                        msg.innerHTML = "";
+                    }, 5000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+          <script>
+    // Smooth scrolling function
+    function smoothScroll(target) {
+        const element = document.querySelector(target);
+        window.scrollTo({
+            top: element.offsetTop,
+            behavior: "smooth"
+        });
+    }
+
+    // Add click event listeners to navigation links
+    const navLinks = document.querySelectorAll("#sideMenu a");
+    navLinks.forEach(link => {
+        link.addEventListener("click", (event) => {
+            event.preventDefault();
+            const target = link.getAttribute("href");
+            smoothScroll(target);
+            closeMenu();
+        });
+    });
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
